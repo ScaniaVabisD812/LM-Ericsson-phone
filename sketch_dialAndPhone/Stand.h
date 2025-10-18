@@ -1,5 +1,5 @@
-#ifndef Dial_h
-#define Dial_h
+#ifndef Stand_h
+#define Stand_h
 
 #include "Arduino.h"
 
@@ -8,7 +8,7 @@ class Stand{
     Stand(int inputPin)
   private:
     int _inputPin
-    
+    Phone& _phone
 };
 
 #endif
