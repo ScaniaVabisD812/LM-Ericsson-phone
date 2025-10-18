@@ -1,19 +1,10 @@
-#include "Arduino.h”
+#include "Arduino.h"
 #include "Phone.h"
-#include "Dial.h"
-#include "Stand.h"
 
-Phone::Phone(int dialPin, int standPin) {
-  _dialPin = dialPin;
-  Dial dial(dialPin, *this);
-  _dial = dial;
+Phone::Phone(int dialPin, int standPin)
+    : _dialPin(dialPin), _dial(_dialPin, *this), _standPin(standPin), _stand(_standPin, *this) {}
 
-  _standPin = standPin;
-  Stand stand(standPin, *this);
-  _stand = stand;
-}
-
-Phone::Loop() {
-  dial.loop();
-  stand.loop();
+void Phone::loop() {
+  _dial.loop();
+  _stand.loop();
 }
