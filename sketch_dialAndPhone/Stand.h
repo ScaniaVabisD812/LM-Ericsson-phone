@@ -1,7 +1,6 @@
 #ifndef Stand_h
 #define Stand_h
 
-// Forward declaration to avoid circular include
 class Phone;
 
 class Stand {

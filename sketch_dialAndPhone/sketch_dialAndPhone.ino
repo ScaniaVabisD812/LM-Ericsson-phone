@@ -1,6 +1,8 @@
 //Documents/Arduino/libraries/[klassnamn] --> Lägg i .h och .cpp-filer!
 
-#include <Phone.h>
+#include "Phone.h"
+#include "Dial.h"
+#include "Stand.h"
 
 int dialPin = 2;
 int standPin = 4;
