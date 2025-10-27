@@ -6,8 +6,9 @@
 
 int dialPin = 2;
 int standPin = 4;
+int bellPin = 6;
 
-Phone phone(dialPin, standPin);
+Phone phone(dialPin, standPin, bellPin);
 
 void setup()
 {
